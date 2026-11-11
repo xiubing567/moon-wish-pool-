@@ -2,6 +2,10 @@
 
 [简体中文](#简体中文) · [English](#english)
 
+![网站界面示意图 · Website interface preview](docs/website-preview.jpg)
+
+*网站界面示意图 / Website interface preview*
+
 ## 简体中文
 
 ### 未风化的许愿池
