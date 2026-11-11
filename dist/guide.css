@@ -1,0 +1,10 @@
+.guide-main{display:block;margin-top:22px}
+.guide-kicker{display:flex;justify-content:space-between;margin:0 4px 10px;font-size:18px;color:var(--muted)}
+.guide-link{display:inline-block;border:8px solid transparent;border-image:url(ink-frame.svg) 10 stretch;padding:0 5px;color:inherit;text-decoration:none;font-size:20px;white-space:nowrap}
+.guide-stage{padding:0;overflow:hidden;background:#f5eddd}
+#guide-video{display:block;width:100%;aspect-ratio:16/9;background:#f5eddd}
+.guide-chapters{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 8px;padding:12px 0}
+.guide-chapters [aria-current=true]{color:var(--red);border-image-source:url(red-frame.svg)}
+@media(max-width:520px){.guide-link{font-size:16px;white-space:normal}}
+
+.guide [hidden]{display:none}

@@ -1,0 +1,68 @@
+:root{color:#26221e;background:#f7f3eb;font-family:"Kaiti SC",KaiTi,STKaiti,Georgia,serif;--red:#ad3327;--muted:#655b51}*{box-sizing:border-box}body{margin:0 auto;max-width:1460px;padding:0 4vw}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid;padding:20px 0;gap:12px}header div{display:flex;align-items:baseline;gap:24px;flex-wrap:wrap}h1,h2,p{margin:0}h1{font-size:clamp(28px,4vw,55px);letter-spacing:.12em}header span{font-size:clamp(14px,2vw,21px)}main{display:grid;grid-template-columns:1.15fr 1fr;gap:5vw;margin:28px 0}aside{display:grid;align-content:start;gap:20px}.map{text-align:center;min-width:0}.eyebrow{display:flex;justify-content:space-between;text-align:left;color:var(--muted);font-size:12px;letter-spacing:.14em;margin-bottom:12px}#globe{position:relative;width:100%;max-width:620px;aspect-ratio:1;margin:auto}canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab;border-radius:50%}canvas:active{cursor:grabbing}#pins,.cross{position:absolute;inset:0;pointer-events:none}.cross{display:grid;place-items:center;color:#fff;text-shadow:0 0 4px #222;font-size:23px}.pin{position:absolute;transform:translate(-50%,-50%);pointer-events:auto;width:30px;height:30px;border:0;background:transparent;padding:0;border-radius:50%}.pin:after{content:"";display:block;width:11px;height:11px;margin:auto;border-radius:50%;background:#cc382d;box-shadow:0 0 0 1px #fff9}.pin.active{outline:1px solid #d84639;background:#da6b5640}.hint{margin:12px 0;color:var(--muted)}.nav{display:flex;align-items:center;justify-content:center;gap:16px}.paper{padding:18px 20px;border:1px solid #39322b;border-radius:5px 8px 4px 7px;background:#fbf8f1;box-shadow:3px 4px #4233280a;min-width:0}.card-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-bottom:1px solid;padding-bottom:10px;margin-bottom:12px}.card-head span,.muted,small,footer{font-size:13px;color:var(--muted)}h2{font-size:24px}.reading{display:grid;grid-template-columns:minmax(85px,30%) 1fr;gap:15px;margin:12px 0}.reading.no-image{grid-template-columns:1fr}.reading img{width:100%;max-height:170px;object-fit:contain;border-radius:4px;background:#eee6d8}.reading p{font-size:18px;line-height:1.55;overflow-wrap:anywhere}.reading button{margin-top:8px}.reading #translated{font-size:16px;margin-top:6px}a{color:var(--red);font-size:13px}button,input,textarea,.upload{font:inherit;color:inherit;border:1px solid #574c42;border-radius:5px 7px 4px 6px;background:transparent}button,.upload{padding:6px 11px;cursor:pointer}button:hover,.upload:hover{background:#efe7da}button:focus-visible,canvas:focus-visible,.upload:focus-within{outline:2px solid var(--red);outline-offset:2px}textarea,input{padding:9px;width:100%}textarea{display:block;margin:10px 0;min-height:83px;resize:vertical}#coords{font-variant-numeric:tabular-nums}.fields,.submit,#attachment{display:flex;align-items:center;gap:10px}.upload{white-space:nowrap;position:relative}.upload input{position:absolute;opacity:0;inset:0;cursor:pointer}.submit{justify-content:space-between;margin-top:12px}.red{color:var(--red);border-color:var(--red);font-size:18px}#attachment{margin-top:8px}#preview{width:58px;height:48px;object-fit:cover}#status:not(:empty){margin-top:8px;font-size:14px;color:var(--red)}[hidden]{display:none!important}footer{border-top:1px solid #a89b8b;padding:14px 0;display:flex;gap:8px;align-items:center}footer a{margin-left:auto}dialog{border:1px solid #574c42;background:#fbf8f1;color:inherit;max-width:420px;margin:auto;padding:24px}dialog p{margin:14px 0;line-height:1.6}dialog::backdrop{background:#27201875}@media(max-width:740px){main{grid-template-columns:1fr;gap:22px;margin-top:18px}header div{gap:6px 14px}header button{white-space:nowrap}.paper{padding:15px}#globe{max-width:430px}}
+
+#photoSource{margin-left:8px}.reading img{max-height:180px}
+
+/* Paper and irregular pen strokes around the unretouched photography. */
+:root{font-family:"Kaiti SC",STKaiti,KaiTi,"AR PL UKai CN",Georgia,serif;background-color:#f7f1e5;background-image:radial-gradient(ellipse at 29% 14%,#fffaf0aa,transparent 70%),repeating-linear-gradient(103deg,#5e442704 0 1px,transparent 1px 6px)}
+header,footer,.card-head{border:0;background:url(ink-rule.svg) bottom left/100% 7px no-repeat}
+footer{background-position:top left;padding-top:18px}
+header h1{display:inline-block;transform:rotate(-2deg);letter-spacing:.15em}
+header span{display:inline-block;transform:rotate(.7deg)}
+.paper,button:not(.pin),textarea,input:not([type=file]),.upload,dialog{border:8px solid transparent;border-image:url(ink-frame.svg) 10 stretch;border-radius:0}
+.paper{padding:11px 13px;background-color:#fffaf0;box-shadow:2px 4px 0 #5940250e}
+button:not(.pin),.upload{padding:1px 5px}
+textarea,input:not([type=file]){padding:3px}
+.red{border-image-source:url(red-frame.svg)!important}
+.card-head h2{display:inline-block;transform:rotate(-1deg)}
+.hint{transform:rotate(-1deg);color:#5a4234}
+.eyebrow{letter-spacing:.08em}
+.cross{transform:rotate(-6deg)}
+.pin:after{border-radius:48% 55% 49% 45%;transform:rotate(-14deg)}
+.pin.active{outline:0;background:none}
+.pin.active:before{content:"";position:absolute;inset:3px;border:1px solid #b6352a;border-radius:45% 54% 49% 55%;transform:rotate(-11deg)}
+.pin:focus-visible{outline:1px dashed var(--red)}
+.reading img{display:block;border-radius:0;background:transparent}
+.reading{align-items:start}
+.reading p{white-space:pre-wrap}
+
+@font-face{font-family:MoonLatin;src:url(note-en.woff) format("woff");font-weight:400 700;font-display:swap;unicode-range:U+0000-024F,U+2000-206F}
+@font-face{font-family:MoonChinese;src:url(note-zh.woff) format("woff");font-display:swap}
+:root{font-family:MoonLatin,MoonChinese,"Kaiti SC",KaiTi,cursive}
+.header-actions{display:flex;gap:8px;align-items:center;flex-shrink:0}
+header h1{font-size:clamp(29px,4.6vw,61px)}
+header span,.hint{font-size:clamp(16px,2.2vw,24px)}
+.card-head span,.muted,small,footer,.eyebrow{font-size:17px}
+.eyebrow{letter-spacing:.05em}
+h2{font-size:29px}
+.reading p{font-size:23px;line-height:1.25}
+.reading #translated{font-size:21px}
+button,textarea,input,.upload,output{font-size:20px}
+textarea{min-height:84px}
+footer span{display:inline}
+@media(max-width:470px){header{align-items:flex-start}header span{width:100%}.header-actions{gap:2px}.header-actions button{font-size:16px}.fields input,.upload{font-size:17px}}
+
+.translation-field{margin:0 0 9px;color:var(--muted);font-size:17px}.translation-field summary{cursor:pointer}.translation-field textarea{margin:5px 0;color:var(--ink,#26221e)}
+.map{position:relative}
+.nav{flex-wrap:wrap}
+#shower{color:var(--red);border-image-source:url(red-frame.svg);font-size:18px}
+#wishTrail{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:2}
+#wishTrail span{position:absolute;left:clamp(16%,var(--landing),84%);top:var(--drop,48%);max-width:65%;padding:3px 7px;background:#fbf2e0ee;color:#752c25;box-shadow:1px 2px 0 #2920152b;line-height:1.2;font-size:clamp(14px,2vw,22px);animation:wish-fall 1.38s ease-out both}
+@keyframes wish-fall{0%{opacity:0;transform:translate(-50%,-65px) rotate(-5deg)}18%,64%{opacity:1}100%{opacity:0;transform:translate(-50%,15px) rotate(2deg)}}
+.pin.arriving:not([hidden]):after{animation:pin-land .6s ease-out both}
+@keyframes pin-land{0%{transform:scale(.25);opacity:.2}50%{transform:scale(1.7);opacity:1}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.moon-girl,.pin.arriving:not([hidden]):after{animation:none}}
+
+button.scout:not(.pin){position:absolute;width:clamp(65px,16%,118px);left:1%;bottom:40px;z-index:3;border:0;padding:0;background:transparent}
+.scout:focus-visible{outline:1px dashed var(--red);outline-offset:3px}
+#shower{width:44px;height:44px;padding:0;line-height:1;font-size:25px}
+#shower[aria-pressed=true]{background:#c34b2412}
+@media(max-width:740px){button.scout:not(.pin){width:clamp(48px,12%,75px);bottom:45px}}
+
+.guide-entry{display:inline-block;border:8px solid transparent;border-image:url(ink-frame.svg) 10 stretch;padding:1px 5px;color:var(--red);font-size:20px;text-decoration:none;white-space:nowrap}
+.wish-spark{position:absolute;z-index:4;pointer-events:none;width:10px;height:10px;border-radius:46% 56% 43% 51%;background:#c73d29;box-shadow:0 0 0 4px #bd3d292e;opacity:0;margin:-5px 0 0 -5px}
+.pin.wish-stamped::before{content:"";position:absolute;inset:3px;border:1.5px solid #b6352a;border-radius:44% 53% 49% 55%;animation:stamp-ring .75s ease-out both}
+@keyframes stamp-ring{0%{opacity:1;transform:scale(.5) rotate(-9deg)}75%{opacity:.2;transform:scale(1.8) rotate(5deg)}100%{opacity:0;transform:scale(2)}}
+@media(max-width:560px){.header-actions{flex-wrap:wrap;justify-content:flex-end}.guide-entry{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.pin.wish-stamped::before{animation:none}}
+.scout .moon-girl{display:block;width:100%;aspect-ratio:153/360;background:url(scout-poses.webp) 0 0/900% 100% no-repeat;filter:drop-shadow(2px 4px 0 #36261622);transform:rotate(var(--scout-lean,0deg));transform-origin:50% 94%;transition:transform .19s ease-out}
+@media(prefers-reduced-motion:reduce){.scout .moon-girl{transition:none}}
