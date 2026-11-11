@@ -6,6 +6,8 @@
 
 *网站界面示意图 / Website interface preview*
 
+*满月实拍 / Full Moon photograph by [Luc Viatour](https://www.astro4edu.org/zh-hans/resources/media/e078zz144Z45/), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). 照片经裁切、缩放 / Cropped and resized.*
+
 ## 简体中文
 
 ### 未风化的许愿池
